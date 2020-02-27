@@ -1,8 +1,26 @@
-var jsoncontent = {
-  catBreed: 'British Shorthair',
-  catName: 'Grumpy Cat'
-};
+function ajax_get(url, callback) {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+      console.log('responseText:' + xmlhttp.responseText);
+      try {
+        var data = JSON.parse(xmlhttp.responseText);
+      } catch (err) {
+        console.log(err.message + ' in ' + xmlhttp.responseText);
+        return;
+      }
+      callback(data);
+    }
+  };
 
-var output = document.getElementById('introduction');
+  xmlhttp.open('GET', url, true);
+  xmlhttp.send();
+}
 
-output.innerHTML = jsoncontent.catName + ' - ' + jsoncontent.catBreed;
+ajax_get('https://api.thecatapi.com/v1/images/search', function(data) {
+  document.getElementById('id').innerHTML = data[0]['id'];
+  document.getElementById('url').innerHTML = data[0]['url'];
+
+  var html = '<img src="' + data[0]['url'] + '">';
+  document.getElementById('image').innerHTML = html;
+});
