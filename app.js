@@ -17,10 +17,9 @@ function ajax_get(url, callback) {
   xmlhttp.send();
 }
 
-ajax_get('https://api.thecatapi.com/v1/images/search', function(data) {
-  document.getElementById('id').innerHTML = data[0]['id'];
-  document.getElementById('url').innerHTML = data[0]['url'];
-
-  var html = '<img src="' + data[0]['url'] + '">';
-  document.getElementById('image').innerHTML = html;
+ajax_get('https://api.thecatapi.com/v1/breeds?attach_breed=0', function(data) {
+  var selection = Math.floor(Math.random() * 100);
+  document.getElementById('breed').innerHTML = data[selection]['name'];
+  document.getElementById('wikipedia_url').innerHTML =
+    data[selection]['wikipedia_url'];
 });
