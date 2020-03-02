@@ -8,6 +8,9 @@ p {
 
 #breed {
   background-color: pink;
+  border-style: solid;
+  border-color: black;
+  border-width: thick;
 }
 
 .quotation {
