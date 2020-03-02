@@ -9,6 +9,7 @@ p {
   border-color: black;
   border-width: thick;
   width: 25%;
+  padding: 3px 0 0 10px;
 }
 
 #breed {
@@ -17,6 +18,7 @@ p {
   border-color: black;
   border-width: thick;
   width: 25%;
+  padding: 3px 0 0 10px;
 }
 
 .quotation {
@@ -29,4 +31,5 @@ p {
   border-color: black;
   border-width: thick;
   width: 25%;
+  padding: 3px 0 0 10px;
 }
