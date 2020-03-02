@@ -1,6 +1,7 @@
 body {
   background-color: paleturquoise;
   background-image: url(Cat.jpg);
+  font-family: sans-serif;
 }
 
 p {
