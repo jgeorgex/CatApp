@@ -1,9 +1,14 @@
 body {
   background-color: paleturquoise;
+  background-image: url(Cat.jpg);
 }
 
 p {
   font-size: larger;
+  border-style: solid;
+  border-color: black;
+  border-width: thick;
+  width: 25%;
 }
 
 #breed {
@@ -11,8 +16,17 @@ p {
   border-style: solid;
   border-color: black;
   border-width: thick;
+  width: 25%;
 }
 
 .quotation {
   background-color: yellowgreen;
+}
+
+#wikipedia_url {
+  background-color: pink;
+  border-style: solid;
+  border-color: black;
+  border-width: thick;
+  width: 25%;
 }
