@@ -18,7 +18,7 @@ function ajax_get(url, callback) {
 }
 
 ajax_get('https://api.thecatapi.com/v1/breeds?attach_breed=0', function(data) {
-  var selection = Math.floor(Math.random() * 100);
+  var selection = Math.floor(Math.random() * 50);
   document.getElementById('breed').innerHTML = data[selection]['name'];
   document.getElementById('wikipedia_url').innerHTML =
     data[selection]['wikipedia_url'];
