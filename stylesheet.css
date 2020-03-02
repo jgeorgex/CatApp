@@ -1,6 +1,6 @@
 body {
-  background-color: paleturquoise;
   background-image: url(Cat.jpg);
+  background-size: cover;
   font-family: sans-serif;
 }
 
@@ -17,7 +17,7 @@ p {
   border-style: solid;
   border-color: black;
   border-width: thick;
-  width: 25%;
+  width: 30%;
   padding: 3px 0 0 10px;
 }
 
@@ -26,12 +26,13 @@ p {
   border-style: solid;
   border-color: black;
   border-width: thick;
-  width: 25%;
+  width: 30%;
   padding: 3px 0 0 10px;
 }
 
 .title {
-  background-color: yellowgreen;
+  background-color: lightblue;
+  font-weight: bold;
 }
 
 #wikipedia_url {
@@ -39,6 +40,6 @@ p {
   border-style: solid;
   border-color: black;
   border-width: thick;
-  width: 25%;
+  width: 30%;
   padding: 3px 0 0 10px;
 }
