@@ -12,4 +12,6 @@ var settings = {
 
 $.ajax(settings).done(function(response) {
   console.log(response);
+  let name = response[1]['name'];
+  let temprament = response[1]['temperament'];
 });
